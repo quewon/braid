@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      html {
+        background: #fff1a9;
+      }
+      
+      canvas {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -webkit-crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <canvas id="canvas" width="300" height="700"></canvas>
+    
+  </body>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript">
+    init();
+    requestAnimationFrame(draw);
+    setInterval(update, 1);
+  </script>
+</html>
